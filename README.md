@@ -1,8 +1,8 @@
 # MC Version Control
 
-**Minecraft 基岩版 AddOn 版本控制器 / Minecraft Bedrock AddOn Version Control**
-
-一个基于 Qt6 Widgets 的 Windows 桌面应用，用于管理 Minecraft 基岩版 AddOn 项目的版本备份与恢复。
+**适用于《我的世界：中国版》ADDON项目 版本控制器 / Version Controller for Minecraft: China Edition ADDON Projects** 
+这个项目是我闲暇之余用claude写的项目可能比较简陋
+这是一个基于 Qt6 Widgets 的 Windows 桌面应用，用于管理 Minecraft 基岩版 AddOn 项目的版本备份与恢复。
 
 ---
 
