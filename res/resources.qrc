@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icon.png</file>
+        <file>style_dark.qss</file>
+        <file>style_light.qss</file>
+        <file>lang/zh_CN.json</file>
+        <file>lang/en_US.json</file>
+    </qresource>
+</RCC>

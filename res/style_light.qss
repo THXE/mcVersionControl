@@ -1,0 +1,162 @@
+/* ============================================
+   MCVersionControl — Light Theme
+   ============================================ */
+
+/* --- Global Defaults --- */
+QWidget {
+    font-family: "Segoe UI", "Microsoft YaHei", sans-serif;
+    font-size: 16px;
+    color: #1A1A1A;
+}
+
+/* --- QMainWindow central area --- */
+QMainWindow {
+    background: transparent;
+}
+QWidget#centralWidget {
+    background: #F3F3F3;
+}
+
+/* --- Top Bar / TitleBar --- */
+#titleBar {
+    border-bottom: 1px solid #D1D1D1;
+    background: #E8E8E8;
+}
+
+/* --- Top Bar / TitleBar buttons --- */
+#titleBar QPushButton {
+    background: transparent;
+    color: #1A1A1A;
+    border: none;
+    font-size: 16px;
+    padding: 0 12px;
+}
+#titleBar QPushButton:hover {
+    background: #E5E5E5;
+    color: #1A1A1A;
+}
+
+#titleBar #closeButton:hover {
+    background: #e81123;
+    color: white;
+}
+
+/* --- Menu-style buttons with right border --- */
+#menuFile      { border-right: 1px solid #D1D1D1; }
+#menuHelp      { border-right: 1px solid #D1D1D1; }
+#menuContact   { border-right: 1px solid #D1D1D1; }
+#menuBack      { border-right: 1px solid #D1D1D1; }
+#menuForward   { border-right: 1px solid #D1D1D1; }
+
+/* --- QSplitter --- */
+QSplitter::handle { background: #D1D1D1; }
+QSplitter::handle:horizontal { width: 1px; }
+QSplitter::handle:vertical   { height: 1px; }
+
+/* --- QScrollBar --- */
+QScrollBar:vertical {
+    width: 6px; background: transparent; margin: 0; border: none;
+}
+QScrollBar::handle:vertical {
+    background: rgba(0, 0, 0, 0.15); border-radius: 3px; min-height: 20px;
+}
+QScrollBar::handle:vertical:hover { background: rgba(0, 0, 0, 0.30); }
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical { height: 0px; border: none; }
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical { background: transparent; }
+
+QScrollBar:horizontal {
+    height: 6px; background: transparent; margin: 0; border: none;
+}
+QScrollBar::handle:horizontal {
+    background: rgba(0, 0, 0, 0.15); border-radius: 3px; min-width: 20px;
+}
+QScrollBar::handle:horizontal:hover { background: rgba(0, 0, 0, 0.30); }
+QScrollBar::add-line:horizontal, QScrollBar::sub-line:horizontal { width: 0px; border: none; }
+QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal { background: transparent; }
+
+/* --- QTableView --- */
+QTableView {
+    background: #F3F3F3;
+    color: #1A1A1A;
+    border: none;
+    gridline-color: rgba(0, 0, 0, 0.06);
+    font-size: 16px;
+    selection-background-color: #E5E5E5;
+    selection-color: #1A1A1A;
+    outline: none;
+}
+QTableView::item { padding: 6px 8px; border: none; }
+QTableView::item:hover { background: #E5E5E5; }
+QTableView::item:selected { background: #E5E5E5; }
+
+/* --- QHeaderView --- */
+QHeaderView { background: #F3F3F3; border: none; }
+QHeaderView::section {
+    background: #F3F3F3;
+    color: #1A1A1A;
+    font-weight: 600;
+    font-size: 16px;
+    border: none;
+    border-bottom: 1px solid #D1D1D1;
+    padding: 8px 8px;
+}
+
+/* --- QScrollArea --- */
+QScrollArea { background: #F3F3F3; border: none; }
+
+/* --- QMenu --- */
+QMenu {
+    background: #FAFAFA;
+    color: #1A1A1A;
+    border: 1px solid #D1D1D1;
+    padding: 4px 0;
+    font-size: 16px;
+}
+QMenu::item { padding: 8px 32px 8px 16px; }
+QMenu::item:selected { background: #E5E5E5; }
+QMenu::separator { height: 1px; background: #D1D1D1; margin: 4px 8px; }
+
+/* --- QLabel --- */
+QLabel { background: transparent; color: #1A1A1A; }
+
+/* --- Project panel --- */
+#projectPanel { border-right: 1px solid #D1D1D1; }
+#scrollContent { background: #F3F3F3; }
+
+/* --- Management bar --- */
+#managementBar { background: #F3F3F3; border-bottom: 1px solid #D1D1D1; }
+
+/* --- Project card labels --- */
+#projectCardName {
+    font-size: 18px; font-weight: 600; color: #1A1A1A; background: transparent;
+}
+#projectCardAuthor {
+    font-size: 14px; color: #555555; background: transparent;
+}
+#projectCardId {
+    font-size: 12px; color: #999999; background: transparent;
+}
+
+/* --- Project header label --- */
+#projectHeaderLabel {
+    font-weight: 600; font-size: 16px;
+    border-bottom: 1px solid #D1D1D1;
+    padding: 0 15px; background: transparent;
+}
+
+/* --- Management bar --- */
+#manageLabel {
+    font-weight: 600; font-size: 16px;
+    border-right: 1px solid #D1D1D1; background: transparent;
+}
+#autoBackupBtn {
+    border: none; background: transparent; color: #1A1A1A;
+    border-right: 1px solid #D1D1D1; font-size: 16px;
+}
+#autoBackupBtn:hover { background: #E5E5E5; }
+
+/* --- Tooltip --- */
+QToolTip {
+    background: #FAFAFA; color: #1A1A1A;
+    border: 1px solid #D1D1D1; font-size: 14px;
+}

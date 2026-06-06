@@ -1,0 +1,244 @@
+/* ============================================
+   MCVersionControl — Global Qt Stylesheet
+   Translated from userInterface/css/style.css
+   ============================================ */
+
+/* --- Global Defaults --- */
+QWidget {
+    font-family: "Segoe UI", "Microsoft YaHei", sans-serif;
+    font-size: 16px;
+    color: #DEDEDE;
+}
+
+/* --- QMainWindow central area --- */
+QMainWindow {
+    background: transparent;
+}
+QWidget#centralWidget {
+    background: #191919;
+}
+
+/* --- Top Bar / TitleBar --- */
+#titleBar {
+    border-bottom: 1px solid #636363;
+    background: #202020;
+}
+
+/* --- Top Bar / TitleBar buttons --- */
+#titleBar QPushButton {
+    background: transparent;
+    color: #DEDEDE;
+    border: none;
+    font-size: 16px;
+    padding: 0 12px;
+}
+#titleBar QPushButton:hover {
+    background: #2C2C2C;
+    color: #DEDEDE;
+}
+
+#titleBar #closeButton:hover {
+    background: #e81123;
+    color: white;
+}
+
+/* --- Menu-style buttons with right border --- */
+#menuFile {
+    border-right: 1px solid #636363;
+}
+#menuHelp {
+    border-right: 1px solid #636363;
+}
+#menuContact {
+    border-right: 1px solid #636363;
+}
+#menuBack {
+    border-right: 1px solid #636363;
+}
+#menuForward {
+    border-right: 1px solid #636363;
+}
+
+/* --- QSplitter --- */
+QSplitter::handle {
+    background: #636363;
+}
+QSplitter::handle:horizontal {
+    width: 1px;
+}
+QSplitter::handle:vertical {
+    height: 1px;
+}
+
+/* --- QScrollBar (thin, Win11-style) --- */
+QScrollBar:vertical {
+    width: 6px;
+    background: transparent;
+    margin: 0;
+    border: none;
+}
+QScrollBar::handle:vertical {
+    background: rgba(255, 255, 255, 0.20);
+    border-radius: 3px;
+    min-height: 20px;
+}
+QScrollBar::handle:vertical:hover {
+    background: rgba(255, 255, 255, 0.35);
+}
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+    height: 0px;
+    border: none;
+}
+QScrollBar::add-page:vertical,
+QScrollBar::sub-page:vertical {
+    background: transparent;
+}
+
+QScrollBar:horizontal {
+    height: 6px;
+    background: transparent;
+    margin: 0;
+    border: none;
+}
+QScrollBar::handle:horizontal {
+    background: rgba(255, 255, 255, 0.20);
+    border-radius: 3px;
+    min-width: 20px;
+}
+QScrollBar::handle:horizontal:hover {
+    background: rgba(255, 255, 255, 0.35);
+}
+QScrollBar::add-line:horizontal,
+QScrollBar::sub-line:horizontal {
+    width: 0px;
+    border: none;
+}
+QScrollBar::add-page:horizontal,
+QScrollBar::sub-page:horizontal {
+    background: transparent;
+}
+
+/* --- QTableView --- */
+QTableView {
+    background: #191919;
+    color: #DEDEDE;
+    border: none;
+    gridline-color: rgba(255, 255, 255, 0.04);
+    font-size: 16px;
+    selection-background-color: #2C2C2C;
+    selection-color: #DEDEDE;
+    outline: none;
+}
+QTableView::item {
+    padding: 6px 8px;
+    border: none;
+}
+QTableView::item:hover {
+    background: #2C2C2C;
+}
+QTableView::item:selected {
+    background: #2C2C2C;
+}
+
+/* --- QHeaderView --- */
+QHeaderView {
+    background: #191919;
+    border: none;
+}
+QHeaderView::section {
+    background: #191919;
+    color: #DEDEDE;
+    font-weight: 600;
+    font-size: 16px;
+    border: none;
+    border-bottom: 1px solid #636363;
+    padding: 8px 8px;
+}
+
+/* --- QScrollArea --- */
+QScrollArea {
+    background: #191919;
+    border: none;
+}
+
+/* --- QMenu (context menus) --- */
+QMenu {
+    background: #202020;
+    color: #DEDEDE;
+    border: 1px solid #636363;
+    padding: 4px 0;
+    font-size: 16px;
+}
+QMenu::item {
+    padding: 8px 32px 8px 16px;
+}
+QMenu::item:selected {
+    background: #2C2C2C;
+}
+QMenu::separator {
+    height: 1px;
+    background: #636363;
+    margin: 4px 8px;
+}
+
+/* --- QLabel --- */
+QLabel {
+    background: transparent;
+    color: #DEDEDE;
+}
+
+/* --- Project panel --- */
+#projectPanel { border-right: 1px solid #636363; }
+#scrollContent { background: #191919; }
+
+/* --- Management bar --- */
+#managementBar { background: #191919; border-bottom: 1px solid #636363; }
+
+/* --- Project card labels --- */
+#projectCardName {
+    font-size: 18px; font-weight: 600; color: #DEDEDE; background: transparent;
+}
+#projectCardAuthor {
+    font-size: 14px; color: #AAAAAA; background: transparent;
+}
+#projectCardId {
+    font-size: 12px; color: #888888; background: transparent;
+}
+
+/* --- Project header label --- */
+#projectHeaderLabel {
+    font-weight: 600;
+    font-size: 16px;
+    border-bottom: 1px solid #636363;
+    padding: 0 15px;
+    background: transparent;
+}
+
+/* --- Management bar label --- */
+#manageLabel {
+    font-weight: 600;
+    font-size: 16px;
+    border-right: 1px solid #636363;
+    background: transparent;
+}
+
+/* --- Management bar button --- */
+#autoBackupBtn {
+    border: none;
+    background: transparent;
+    color: #DEDEDE;
+    border-right: 1px solid #636363;
+    font-size: 16px;
+}
+#autoBackupBtn:hover {
+    background: #2C2C2C;
+}
+
+/* --- Tooltip --- */
+QToolTip {
+    background: #202020;
+    color: #DEDEDE;
+    border: 1px solid #636363;
+    font-size: 14px;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <title>UI 重构美化版</title>
+
+  <!-- 外部图标库（CDN） -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <!-- 项目自定义样式 -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div class="top-bar">
+    <div class="top-left">
+      <img class="logo" src="../res\icon.png" alt="Logo">
+      <div class="menu">
+        <button>文件</button>
+        <button>帮助</button>
+        <button>联系我们</button>
+        <button>←</button>
+        <button>→</button>
+      </div>
+    </div>
+    <div class="window-controls">
+      <button>-</button>
+      <button>□</button>
+      <button class="close">✕</button>
+    </div>
+  </div>
+
+  <div class="container">
+
+      <div class="project-list">
+      <div class="project-header">项目</div>
+      <div class="project-body">
+        <div class="project-item active">Project A</div>
+        <div class="project-item">Project B</div>
+        <div class="project-item">Project C</div>
+      </div>
+    </div>
+
+    <div class="main">
+
+      <div class="management-bar">
+        <div class="label">管理</div>
+        <button class="tool-btn">自动备份</button>
+      </div>
+
+      <div class="table">
+        <div class="header">
+          <div>版本</div>
+          <div>来源</div>
+          <div>时间</div>
+          <div>大小</div>
+        </div>
+
+        <div class="row active">
+          <div>1.0</div>
+          <div>Official</div>
+          <div>2026</div>
+          <div>12MB</div>
+        </div>
+        <div class="row">
+          <div>2.1</div>
+          <div>Community</div>
+          <div>2025</div>
+          <div>8.4MB</div>
+        </div>
+        <div class="row">
+          <div>3.0-beta</div>
+          <div>Dev</div>
+          <div>2026-05</div>
+          <div>15MB</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+
+</html>

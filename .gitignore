@@ -1,0 +1,51 @@
+# Build output
+build/
+build2*/
+build*/
+
+# Qt generated
+*.pro.user
+*.pro.user.*
+moc_*.cpp
+ui_*.h
+qrc_*.cpp
+*.autogen
+
+# Object files
+*.o
+*.obj
+*.a
+*.exe
+*.dll
+
+# IDE
+.vs/
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+Thumbs.db
+.DS_Store
+Desktop.ini
+
+# Qt deploy artifacts (in build dir)
+platforms/
+styles/
+imageformats/
+iconengines/
+generic/
+networkinformation/
+tls/
+translations/
+*.qm
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+*.cmake
+!CMakeLists.txt

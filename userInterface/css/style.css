@@ -1,0 +1,274 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", "Microsoft YaHei", sans-serif;
+}
+
+:root {
+    --unit: 42px;
+
+    /* 新配色系统 */
+    --bg-main: #191919;
+    --bg-panel: #202020;
+    --bg-hover: #2C2C2C;
+    --bg-active: #2C2C2C;
+    /* 线的颜色 */
+    --border: #636363;
+
+    /* 主要字体颜色 */
+    --text-main: #DEDEDE;
+
+    /* 副字体颜色 */
+    --text-sub: #DEDEDE;
+    
+    /* 选择颜色 */
+    --accent: #555555;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: var(--bg-main);
+    color: var(--text-main);
+    font-size: 26px;
+}
+
+/* ===== 顶部栏 ===== */
+.top-bar {
+    height: var(--unit);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--bg-panel);
+    border-bottom: 1px solid var(--border);
+}
+
+.top-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: var(--unit);
+    height: var(--unit);
+    border-radius: 6px;
+}
+
+button {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+}
+
+/* 菜单 */
+.menu button {
+    height: var(--unit);
+    border: none;
+    background: transparent;
+    color: var(--text-sub);
+    cursor: pointer;
+    padding: 0 12px;
+    transition: all 0.15s;
+}
+
+/* 文件 2U */
+.menu button:nth-child(1) {
+    width: calc(2 * var(--unit));
+    border-right: 1px solid var(--border);
+    
+}
+
+/* 帮助 2U */
+.menu button:nth-child(2) {
+    width: calc(2 * var(--unit));
+    border-right: 1px solid var(--border);
+}
+
+.menu button:nth-child(3) {
+    width: calc(3.3 * var(--unit));
+    border-right: 1px solid var(--border);
+}
+
+/* ← → */
+.menu button:nth-child(4) {
+    border-right: 1px solid var(--border);
+}
+.menu button:nth-child(5) {
+    width: var(--unit);
+    border-right: 1px solid var(--border);
+}
+
+.menu button:hover {
+    background: var(--bg-hover);
+    color: var(--text-main);
+}
+
+/* 窗口按钮 */
+.window-controls button {
+    width: 40px;
+    height: 28px;
+    border: none;
+    background: transparent;
+    color: var(--text-sub);
+    cursor: pointer;
+}
+
+.window-controls button:hover {
+    background: var(--bg-hover);
+}
+
+.window-controls .close:hover {
+    background: #e81123;
+    color: white;
+}
+
+/* ===== 主体 ===== */
+.container {
+    flex: 1;
+    display: flex;
+
+    /* 在项目列表右侧添加分隔竖线 */
+    .project-list {
+        border-right: 1px solid var(--border);
+    }
+}
+
+.project-header {
+    height: var(--unit);
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    border-bottom: 1px solid var(--border);
+    font-weight: 600;
+}
+
+.project-body {
+    flex: 1;
+    overflow-y: auto;
+    padding: 8px;
+}
+
+.project-item {
+    padding: 8px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.12s;
+    color: var(--text-sub);
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 4px;
+}
+
+.project-item:hover {
+    background: var(--bg-hover);
+    color: var(--text-main);
+}
+
+.project-item.active {
+    background: var(--bg-active);
+    color: var(--text-main);
+    border-left: 2px solid var(--accent);
+    /* border-bottom: 1px solid var(--border); */
+}
+
+/* ===== 主区域 ===== */
+.main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background: var(--bg-main);
+}
+
+/* 管理栏 */
+.management-bar {
+    height: var(--unit);
+    display: flex;
+    border-bottom: 1px solid var(--border);
+}
+
+.label {
+    width: calc(2 * var(--unit));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    border-right: 1px solid var(--border);
+}
+
+.tool-btn {
+    width: calc(3.3 * var(--unit));
+    border: none;
+    background: transparent;
+    color: var(--text-sub);
+    cursor: pointer;
+    border-right: 1px solid var(--border);
+}
+
+.tool-btn:hover {
+    background: var(--bg-hover);
+    color: var(--text-main);
+}
+
+/* 版本标题 */
+.version-header-bar {
+    height: var(--unit);
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    border-bottom: 1px solid var(--border);
+    font-weight: 600;
+}
+
+/* 表格 */
+.table {
+    flex: 1;
+    overflow-y: auto;
+    padding: 8px 12px;
+}
+
+.header,
+.row {
+    display: flex;
+    padding: 6px 0;
+}
+
+.header {
+    font-weight: 600;
+    border-bottom: 1px solid var(--border);
+    color: var(--text-sub);
+}
+
+.row {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+    transition: all 0.12s;
+}
+
+.row:hover {
+    background: var(--bg-hover);
+}
+
+.row.active {
+    background: var(--bg-active);
+    border-left: 2px solid var(--accent);
+}
+
+.header div,
+.row div {
+    flex: 1;
+}
+
+/* 滚动条（Win11风格） */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 3px;
+}
+
+.project-body:hover::-webkit-scrollbar-thumb,
+.table:hover::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.25);
+}
